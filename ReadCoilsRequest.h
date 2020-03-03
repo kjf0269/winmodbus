@@ -1,7 +1,7 @@
 #pragma once
-#include "ModbusRequest.h"
+#include "ModbusPDU.h"
 class ReadCoilsRequest :
-	public ModbusRequest
+	public ModbusPDU
 {
 public:
 	ReadCoilsRequest();

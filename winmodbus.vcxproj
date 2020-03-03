@@ -148,9 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MBAPHeader.cpp" />
-    <ClCompile Include="ModbusException.cpp" />
-    <ClCompile Include="ModbusRequest.cpp" />
-    <ClCompile Include="ModbusResponse.cpp" />
+    <ClCompile Include="ModbusPDU.cpp" />
     <ClCompile Include="ModbusTcpIpAdu.cpp" />
     <ClCompile Include="ReadCoilsRequest.cpp" />
     <ClCompile Include="winmodbus.cpp" />
@@ -158,9 +156,7 @@
   <ItemGroup>
     <ClInclude Include="MBAPHeader.h" />
     <ClInclude Include="modbus.h" />
-    <ClInclude Include="ModbusException.h" />
-    <ClInclude Include="ModbusRequest.h" />
-    <ClInclude Include="ModbusResponse.h" />
+    <ClInclude Include="ModbusPDU.h" />
     <ClInclude Include="ModbusTcpIpAdu.h" />
     <ClInclude Include="ReadCoilsRequest.h" />
   </ItemGroup>

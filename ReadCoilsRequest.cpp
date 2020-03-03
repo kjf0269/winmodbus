@@ -3,7 +3,7 @@
 #include <vcruntime_string.h>
 #include <winsock.h>
 
-ReadCoilsRequest::ReadCoilsRequest(): ModbusRequest(READ_COILS_FC)
+ReadCoilsRequest::ReadCoilsRequest(): ModbusPDU(READ_COILS_FC)
 {
 	dataBuffer = (uint8_t*)&request;
 	memset(&request, 0, sizeof(request));

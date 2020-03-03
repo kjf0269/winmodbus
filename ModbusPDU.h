@@ -1,9 +1,9 @@
 #pragma once
 #include <cstdint>
-class ModbusRequest
+class ModbusPDU
 {
 public:
-	ModbusRequest(uint8_t functionCode);
+	ModbusPDU(uint8_t functionCode);
 	unsigned int getMessage(uint8_t* dst);
 
 protected:

@@ -24,16 +24,10 @@
     <ClCompile Include="ModbusTcpIpAdu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ModbusRequest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ModbusResponse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ModbusException.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ReadCoilsRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusPDU.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,19 +38,13 @@
     <ClInclude Include="ModbusTcpIpAdu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ModbusRequest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ModbusResponse.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ModbusException.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ReadCoilsRequest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="modbus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusPDU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
