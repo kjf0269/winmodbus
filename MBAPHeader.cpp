@@ -8,6 +8,21 @@ MBAPHeader::MBAPHeader(uint16_t transId, uint16_t length, uint8_t unitId, uint16
 {
 }
 
+MBAPHeader::MBAPHeader(uint8_t *msg)
+{
+	//  build header from incoming octet stream
+	uint16_t* shortPtr = (uint16_t*) &msg[0];
+	transactionId = ntohs(*shortPtr);
+
+	shortPtr = (uint16_t*)&msg[2];
+	protocolId = ntohs(*shortPtr);
+
+	shortPtr = (uint16_t*)&msg[4];
+	length = ntohs(*shortPtr);
+
+	unitId = msg[6];
+}
+
 unsigned int MBAPHeader::getMBAPHeaderLength()
 {
 	return sizeof(transactionId) + sizeof(length) + sizeof(unitId) + sizeof(protocolId);
@@ -27,4 +42,24 @@ int MBAPHeader::copyHeader(uint8_t* dest)
 	dest[6] = unitId;
 
 	return 0;
+}
+
+uint16_t MBAPHeader::getTransactionId()
+{
+	return transactionId;
+}
+
+uint16_t MBAPHeader::getProtocolId()
+{
+	return protocolId;
+}
+
+uint16_t MBAPHeader::getLength()
+{
+	return length;
+}
+
+uint8_t MBAPHeader::getUnitId()
+{
+	return unitId;
 }

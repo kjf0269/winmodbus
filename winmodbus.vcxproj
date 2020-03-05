@@ -150,7 +150,10 @@
     <ClCompile Include="MBAPHeader.cpp" />
     <ClCompile Include="ModbusPDU.cpp" />
     <ClCompile Include="ModbusTcpIpAdu.cpp" />
+    <ClCompile Include="ModbusTcpIpAduFactory.cpp" />
+    <ClCompile Include="ModbusTcpIpConnection.cpp" />
     <ClCompile Include="ReadCoilsRequest.cpp" />
+    <ClCompile Include="ReadCoilsResponse.cpp" />
     <ClCompile Include="winmodbus.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +161,10 @@
     <ClInclude Include="modbus.h" />
     <ClInclude Include="ModbusPDU.h" />
     <ClInclude Include="ModbusTcpIpAdu.h" />
+    <ClInclude Include="ModbusTcpIpAduFactory.h" />
+    <ClInclude Include="ModbusTcpIpConnection.h" />
     <ClInclude Include="ReadCoilsRequest.h" />
+    <ClInclude Include="ReadCoilsResponse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
