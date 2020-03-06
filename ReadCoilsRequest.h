@@ -8,6 +8,7 @@ public:
 
 	int setStartAddress(uint16_t startAddress);
 	int setQuantity(uint16_t quantity);
+	virtual ~ReadCoilsRequest() {}
 
 protected:
 

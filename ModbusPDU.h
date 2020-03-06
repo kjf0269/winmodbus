@@ -5,6 +5,7 @@ class ModbusPDU
 public:
 	ModbusPDU(uint8_t functionCode);
 	unsigned int getMessage(uint8_t* dst);
+	virtual ~ModbusPDU() {}
 
 protected:
 	uint8_t functionCode;
